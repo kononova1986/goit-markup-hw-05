@@ -571,7 +571,7 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     position:fixed;
     top:0px;
     left:0px;
-    width: 100%;
+    width:100%;
     height:100%;
     background:rgba(46, 47, 66, 0.40);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
@@ -589,7 +589,7 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     width: 408px;
     min-height: 584px;
     background: #fcfcfc;
-    box-shadow:(0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px 0, 0.2);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.20);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px; 
@@ -605,15 +605,12 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 .icon-close{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-close:hover,
-.icon-close:focus{
-    fill: #ffffff;
-}
+
 .content-close{
     display: flex;
     position: absolute; 
     top: 24px;
-    left: 24px;
+    right: 24px;
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -629,17 +626,9 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 .content-close:focus{
     background-color: #404bbf; 
     border: none;
+    fill: #ffffff
 }
 
-.popup-content{
-    background-color: #fff;
-    width: 408px;
-    height: 584px;
-    flex-shrink: 0;
-    padding: 72px 24px 24px 24px;
-    border-radius: 4px;
-    border: 1px solid  rgba(46, 47, 66, 0.40); 
-}
 .popup-title{
     font-weight: 500;
     font-size: 16px;
@@ -651,23 +640,20 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 }
 
 .form-title{
-    display: flex;
-    width: 360px;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .form-title-lebel{
     position: relative; 
+    margin-bottom: 8px
     }
 .form-lebel{
     display: block; 
     color:#8E8F99;
     font-size: 12px;
     font-weight: 400;
-    line-height: 1.7;
     letter-spacing: 0.04em;
     margin-bottom: 4px;
+    line-height: 1.17; 
     }
 
 .form-title-input-content{
