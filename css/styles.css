@@ -576,7 +576,7 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     background:rgba(46, 47, 66, 0.40);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.popup:target{
+.is-open:target{
     opacity: 1;
     visibility: visible;
 }
@@ -668,6 +668,7 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     padding-left: 38px;
+    background-color: transparent; 
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -675,6 +676,7 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 .form-title-input-name:focus{
     outline: none;
     border-color: #4D5AE5; 
+    fill: #4D5AE5;
 }
 .icon-form{
     position: absolute;
@@ -684,7 +686,7 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     left:16px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.icon-form:active {
+.form-title-input-name:focus+.icon-form{
     fill: #4D5AE5;
 }
 .form-lebel-textarea{
@@ -731,6 +733,12 @@ margin-bottom: 24px;
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-lebel-span:checked{
+    background-color:#404bbf;
+    border: none;
+    fill: #F4F4FD;
+}
+
 .form-lebel-link{
     color:#4d5ae5; 
     text-decoration: underline;
@@ -762,15 +770,6 @@ margin-bottom: 24px;
 }
 
 
-.icon-checket{
-fill: #FFF;
-background-color: #404bbf;
-}
-.form-lebel-span:checked {
-    background-color:#404bbf;
-    border: none;
-    fill:#F4F4FD;
-}
 
 
 
