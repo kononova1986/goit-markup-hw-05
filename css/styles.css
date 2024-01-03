@@ -739,11 +739,20 @@ a {
 .popup-body .form-title-input-name:focus + svg {
     fill: #4d5ae5;
 }
-input[type="checkbox"]:checked + label span {
+input[type="checkbox"]:checked + label span svg {
     background-color:#404BBF;
-    
+    border: none;
+    fill:#F4F4FD;
 }
-
+.icon-checket{
+    width: 16px;
+    height: 16px;
+}
+/*input[type="checkbox"]:checked {
+    background-color:#404BBF;
+    border: none;
+    fill:#F4F4FD;
+}*/
 .form-lebel-link {
     color: #4d5ae5;
     text-decoration: underline;
