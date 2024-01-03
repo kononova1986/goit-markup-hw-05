@@ -740,16 +740,11 @@ a {
     fill: #4d5ae5;
 }
 
-input[type="checkbox"]:checked + label span svg {
-    background-color:#404BBF;
+.form-title-input-name:cheked + label span{
+    background-color: #404BBF;
     border: none;
-    fill:#F4F4FD;
-}
-input[type="checkbox"]:checked + .form-lebel-span{
-    background-color:#404BBF;
-    border: none;
-    fill:#F4F4FD;
-    }
+    fill: #F4F4FD;
+} 
 .icon-checket{
     width: 16px;
     height: 16px;
