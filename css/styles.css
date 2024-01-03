@@ -146,7 +146,6 @@ a {
 
 /*Банер*/
 .banner {
-   
     display: flex;
     padding: 188px 0;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -575,7 +574,6 @@ a {
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-open {
-    
 }
 
 .popup-body {
@@ -736,13 +734,17 @@ a {
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+:root {
+    --bg-color: #404BBF;
+    --icon-color: #F4F4FD;
+}
 .popup-body .form-title-input-name:focus + svg {
-  fill: #4D5AE5;
+    fill: #4d5ae5;
 }
 input[type="checkbox"]:checked + label span {
-  background-color: #404BBF;
-  border: none;
-  fill: #F4F4FD;
+    background-color:var(--bg-color);
+    border: none;
+    fill: var( --icon-color);
 }
 
 .form-lebel-link {
