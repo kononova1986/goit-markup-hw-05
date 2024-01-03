@@ -512,6 +512,7 @@ a {
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
 }
@@ -719,7 +720,7 @@ a {
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
-.form-lebel-span {
+.form-lebel-span{
     position: relative;
     fill: transparent;
     justify-content: center;
@@ -734,17 +735,14 @@ a {
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-:root {
-    --bg-color: #404BBF;
-    --icon-color: #F4F4FD;
-}
+
 .popup-body .form-title-input-name:focus + svg {
     fill: #4d5ae5;
 }
 input[type="checkbox"]:checked + label span {
-    background-color:var(--bg-color);
+    background-color:#404BBF;
     border: none;
-    fill: var( --icon-color);
+    fill: #F4F4FD;
 }
 
 .form-lebel-link {
