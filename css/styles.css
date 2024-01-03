@@ -740,7 +740,7 @@ a {
     fill: #4d5ae5;
 }
 
-.form-title-input-name:cheked + label span{
+.form-title-input-name:checked + label span{
     background-color: #404BBF;
     border: none;
     fill: #F4F4FD;
